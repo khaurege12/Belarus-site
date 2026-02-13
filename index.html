@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гражданская ответственность и патриотизм в Беларуси</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
         :root {
@@ -55,6 +58,7 @@
                 transform: translateY(-100%);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -275,7 +279,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 linear-gradient(135deg, rgba(200, 49, 62, 0.03) 0%, rgba(74, 124, 89, 0.05) 100%),
                 repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(200, 49, 62, 0.02) 2px, rgba(200, 49, 62, 0.02) 4px);
             z-index: 0;
@@ -288,7 +292,7 @@
             width: 55%;
             height: 100%;
             background: linear-gradient(to right, var(--color-white) 0%, transparent 15%, transparent 100%),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23F5F5F5" width="800" height="600"/><path d="M0,300 Q200,250 400,300 T800,300 L800,600 L0,600 Z" fill="%234A7C59" opacity="0.1"/><circle cx="150" cy="150" r="80" fill="%23C8313E" opacity="0.05"/><circle cx="650" cy="400" r="120" fill="%234A7C59" opacity="0.08"/></svg>');
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23F5F5F5" width="800" height="600"/><path d="M0,300 Q200,250 400,300 T800,300 L800,600 L0,600 Z" fill="%234A7C59" opacity="0.1"/><circle cx="150" cy="150" r="80" fill="%23C8313E" opacity="0.05"/><circle cx="650" cy="400" r="120" fill="%234A7C59" opacity="0.08"/></svg>');
             background-size: cover;
             background-position: center;
             z-index: 1;
@@ -301,6 +305,7 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -322,6 +327,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -715,8 +721,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .modal-content {
@@ -736,6 +747,7 @@
                 transform: translateY(50px);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -1013,10 +1025,13 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header id="header">
@@ -1029,7 +1044,7 @@
                 <ul id="navMenu">
                     <li><a href="#stats">Статистика</a></li>
                     <li><a href="#projects">Проекты</a></li>
-                    <li id="dashboardLink" style="display: none;"><a href="#dashboard">Мой кабинет</a></li>
+                    <li id="dashboardLink" style="display: none;"><a href="dashboard.html">Мой кабинет</a></li>
                     <li id="authButtons" class="auth-buttons">
                         <button class="btn-small btn-outline" onclick="openLoginModal()">Войти</button>
                         <button class="btn-small btn-primary" onclick="openRegisterModal()">Регистрация</button>
@@ -1037,7 +1052,7 @@
                     <li id="userMenuContainer" class="user-menu" style="display: none;">
                         <div class="user-avatar" id="userAvatar" onclick="toggleUserDropdown()"></div>
                         <div class="user-dropdown" id="userDropdown">
-                            <a href="#dashboard" onclick="showDashboard()">Мой кабинет</a>
+                            <a href="dashboard.html">Мой кабинет</a>
                             <button onclick="logout()">Выйти</button>
                         </div>
                     </li>
@@ -1057,10 +1072,12 @@
         <div class="hero-image"></div>
         <div class="hero-content">
             <h1>Формирование гражданской ответственности в Беларуси</h1>
-            <p class="hero-subtitle">Вместе мы создаём будущее, основанное на уважении, труде и заботе о нашей стране и людях</p>
+            <p class="hero-subtitle">Вместе мы создаём будущее, основанное на уважении, труде и заботе о нашей стране и
+                людях</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">Наши проекты</a>
-                <button class="btn btn-secondary" id="heroJoinBtn" onclick="handleHeroJoinClick()">Присоединиться</button>
+                <button class="btn btn-secondary" id="heroJoinBtn"
+                    onclick="handleHeroJoinClick()">Присоединиться</button>
             </div>
         </div>
     </section>
@@ -1129,7 +1146,8 @@
             </div>
 
             <div>
-                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 2rem;">Мои проекты</h3>
+                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 2rem;">Мои проекты
+                </h3>
                 <div class="my-projects-grid" id="myProjectsGrid">
                     <div style="text-align: center; padding: 3rem; color: var(--color-medium-gray);">
                         <p>У вас пока нет активных проектов</p>
@@ -1145,7 +1163,8 @@
         <div class="footer-content">
             <div class="footer-ornament"></div>
             <p>Вместе мы создаём будущее, основанное на ответственности, уважении и заботе о нашей стране</p>
-            <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.6;">© 2026 Гражданская ответственность и патриотизм в Беларуси</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.6;">© 2026 Гражданская ответственность и
+                патриотизм в Беларуси</p>
         </div>
     </footer>
 
@@ -1234,20 +1253,20 @@
 
         // Инициализация Supabase с проверкой загрузки библиотеки
         let supabaseClient = null;
-        
+
         // Функция инициализации
         function initSupabase() {
             if (!window.supabase) {
                 console.error('Supabase library not loaded. Please check your internet connection.');
                 return null;
             }
-            
+
             if (SUPABASE_URL === 'YOUR_SUPABASE_URL' || SUPABASE_ANON_KEY === 'YOUR_SUPABASE_ANON_KEY') {
                 console.warn('⚠️ ВНИМАНИЕ: Вы не заменили SUPABASE_URL и SUPABASE_ANON_KEY на реальные значения!');
                 console.warn('Инструкция: Settings → API в вашем проекте Supabase');
                 return null;
             }
-            
+
             try {
                 return window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
             } catch (error) {
@@ -1441,13 +1460,13 @@
             document.getElementById('authButtons').style.display = 'none';
             document.getElementById('userMenuContainer').style.display = 'block';
             document.getElementById('dashboardLink').style.display = 'block';
-            
+
             // Установка аватара
-            const initials = currentUser.user_metadata.full_name 
+            const initials = currentUser.user_metadata.full_name
                 ? currentUser.user_metadata.full_name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()
                 : currentUser.email[0].toUpperCase();
             document.getElementById('userAvatar').textContent = initials;
-            
+
             // Обновляем кнопку в hero
             updateHeroButton();
         }
@@ -1458,7 +1477,7 @@
             document.getElementById('userMenuContainer').style.display = 'none';
             document.getElementById('dashboardLink').style.display = 'none';
             document.querySelector('.dashboard-section').classList.remove('show');
-            
+
             // Обновляем кнопку в hero
             updateHeroButton();
         }
@@ -1533,7 +1552,7 @@
         // Отрисовка проектов пользователя
         function renderUserProjects(userProjects) {
             const container = document.getElementById('myProjectsGrid');
-            
+
             if (!userProjects || userProjects.length === 0) {
                 container.innerHTML = `
                     <div style="text-align: center; padding: 3rem; color: var(--color-medium-gray);">
@@ -1634,7 +1653,7 @@
                 font-size: 1rem;
                 line-height: 1.5;
             `;
-            
+
             const icon = type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ';
             notification.innerHTML = `
                 <div style="display: flex; align-items: start; gap: 1rem;">
@@ -1642,7 +1661,7 @@
                     <div style="flex: 1;">${message}</div>
                 </div>
             `;
-            
+
             // Добавляем стиль анимации
             const style = document.createElement('style');
             style.textContent = `
@@ -1671,9 +1690,9 @@
                 style.id = 'notification-styles';
                 document.head.appendChild(style);
             }
-            
+
             document.body.appendChild(notification);
-            
+
             // Автоматически убираем через 5 секунд
             setTimeout(() => {
                 notification.style.animation = 'slideOut 0.4s ease-out';
@@ -1681,7 +1700,7 @@
                     notification.remove();
                 }, 400);
             }, 5000);
-            
+
             // Закрытие по клику
             notification.addEventListener('click', () => {
                 notification.style.animation = 'slideOut 0.4s ease-out';
@@ -1694,7 +1713,7 @@
         // Функция для получения понятного текста ошибки
         function getErrorMessage(error) {
             const errorString = error?.message || error?.toString() || '';
-            
+
             // Ошибки регистрации
             if (errorString.includes('User already registered')) {
                 return 'Пользователь с таким email уже зарегистрирован';
@@ -1711,7 +1730,7 @@
             if (errorString.includes('Email not confirmed')) {
                 return 'Email не подтверждён. Проверьте почту';
             }
-            
+
             // Ошибки входа
             if (errorString.includes('Invalid login credentials')) {
                 return 'Неверный email или пароль';
@@ -1719,7 +1738,7 @@
             if (errorString.includes('Email not confirmed')) {
                 return 'Подтвердите email перед входом';
             }
-            
+
             // Ошибки базы данных
             if (errorString.includes('duplicate key')) {
                 return 'Запись с такими данными уже существует';
@@ -1730,7 +1749,7 @@
             if (errorString.includes('permission denied') || errorString.includes('RLS')) {
                 return 'Недостаточно прав для выполнения операции';
             }
-            
+
             // Ошибки сети
             if (errorString.includes('Failed to fetch') || errorString.includes('NetworkError')) {
                 return 'Ошибка подключения к серверу. Проверьте интернет';
@@ -1738,12 +1757,12 @@
             if (errorString.includes('timeout')) {
                 return 'Превышено время ожидания. Попробуйте снова';
             }
-            
+
             // Общие ошибки
             if (errorString.includes('Invalid API key')) {
                 return 'Ошибка конфигурации. Проверьте настройки Supabase';
             }
-            
+
             // Если неизвестная ошибка, возвращаем оригинальный текст
             return errorString || 'Произошла неизвестная ошибка';
         }
@@ -1790,7 +1809,7 @@
             e.preventDefault();
             const btn = document.getElementById('loginBtn');
             const errorEl = document.getElementById('loginError');
-            
+
             btn.disabled = true;
             btn.innerHTML = '<span class="loading"></span>';
             errorEl.classList.remove('show');
@@ -1820,7 +1839,7 @@
             e.preventDefault();
             const btn = document.getElementById('registerBtn');
             const errorEl = document.getElementById('registerError');
-            
+
             const name = document.getElementById('registerName').value.trim();
             const email = document.getElementById('registerEmail').value.trim();
             const phone = document.getElementById('registerPhone').value.trim();
@@ -1847,7 +1866,7 @@
                 showMessage('Выберите регион', 'error');
                 return;
             }
-            
+
             btn.disabled = true;
             btn.innerHTML = '<span class="loading"></span>';
             errorEl.classList.remove('show');
@@ -1910,13 +1929,13 @@
         // Filter projects
         const filterButtons = document.querySelectorAll('.filter-btn');
         filterButtons.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 filterButtons.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                
+
                 const filter = this.getAttribute('data-filter');
                 const projects = document.querySelectorAll('.project-card');
-                
+
                 projects.forEach(project => {
                     if (filter === 'all' || project.classList.contains(filter)) {
                         project.classList.remove('hidden');
@@ -1931,24 +1950,28 @@
         function openProjectModal(project) {
             const modal = document.getElementById('projectJoinModal');
             const content = document.getElementById('projectJoinContent');
-            
+
             content.innerHTML = `
-                <h2>${project.icon} ${project.title}</h2>
-                <p style="color: var(--color-medium-gray); margin-bottom: 1rem;">${getCategoryName(project.category)} • ${project.date}</p>
-                <p style="margin-bottom: 1.5rem; line-height: 1.8;">${project.description}</p>
-                <div style="background: var(--color-light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <strong>Участники:</strong> ${project.participants}+ человек<br>
-                    <strong>Часов волонтёрства:</strong> ${project.hours}ч в месяц
-                </div>
-                <p style="line-height: 1.8; color: var(--color-medium-gray); margin-bottom: 2rem;">
-                    Этот проект реализуется благодаря поддержке волонтёров и неравнодушных граждан. 
-                    Присоединяйтесь к команде и внесите свой вклад в развитие нашей страны!
-                </p>
-                <button class="btn btn-primary" style="width: 100%;" onclick="joinProject(${project.id})">
-                    Присоединиться к проекту
-                </button>
-            `;
-            
+    <h2>${project.icon} ${project.title}</h2>
+    <p style="color: var(--color-medium-gray); margin-bottom: 1rem;">${getCategoryName(project.category)} • ${project.date}</p>
+    <p style="margin-bottom: 1.5rem; line-height: 1.8;">${project.description}</p>
+    <div style="background: var(--color-light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+        <strong>Участники:</strong> ${project.participants}+ человек<br>
+        <strong>Часов волонтёрства:</strong> ${project.hours}ч в месяц
+    </div>
+    <p style="line-height: 1.8; color: var(--color-medium-gray); margin-bottom: 2rem;">
+        Узнайте подробнее о целях проекта и требованиях к волонтёрам перед присоединением.
+    </p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="project-info.html?id=${project.id}" class="btn btn-secondary" style="flex: 1; text-align: center; text-decoration: none; min-width: 200px;">
+            📖 Подробнее о проекте
+        </a>
+        <button class="btn btn-primary" style="flex: 1; min-width: 200px;" onclick="joinProject(${project.id})">
+            ✓ Присоединиться сейчас
+        </button>
+    </div>
+`;
+
             modal.classList.add('show');
         }
 
@@ -2056,17 +2079,17 @@
         // Инициализация Supabase при загрузке страницы
         window.addEventListener('DOMContentLoaded', () => {
             supabaseClient = initSupabase();
-            
+
             if (!supabaseClient) {
-                console.error('❌ Не удалось инициализировать Supabase. Проверьте:');
+                console.error('Не удалось инициализировать Supabase. Проверьте:');
                 console.error('1. Замените YOUR_SUPABASE_URL на реальный URL');
                 console.error('2. Замените YOUR_SUPABASE_ANON_KEY на реальный ключ');
                 console.error('3. Проверьте подключение к интернету');
                 return;
             }
-            
+
             console.log('✅ Supabase успешно инициализирован');
-            
+
             // Проверка сессии при загрузке страницы
             checkSession();
 
@@ -2084,4 +2107,5 @@
         });
     </script>
 </body>
+
 </html>
